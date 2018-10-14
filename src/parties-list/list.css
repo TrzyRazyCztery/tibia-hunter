@@ -1,0 +1,47 @@
+.parties-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.parties-list li {
+  box-shadow: 0 2px 12px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+
+  border-radius: 5px;
+
+  width: 50%;
+}
+
+.parties-list .actions {
+  padding: 0 1.5em;
+}
+
+.parties-list .button {
+  display: inline-block;
+
+  padding: 0.5em 1em;
+
+  margin-right: 1em;
+
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.parties-list .button.primary {
+  background-color: #004d99;
+}
+
+.parties-list .button.secondary {
+  background-color: #666666;
+  font-weight: normal;
+}
+
+.parties-list .button.primary:hover {
+  background-color: #3399ff;
+}
+
+.parties-list .button.secondary:hover {
+  background-color: #999999;
+}

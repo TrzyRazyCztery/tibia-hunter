@@ -31,8 +31,8 @@ const characters = {
   }
 };
 
-const hunts = {
-  HUNT_1: {
+const parties = {
+  PARTY_1: {
     id: "493eb9b8-a807-4352-aaf7-385a11f7885c",
     characters: [
       { ...characters["SAJGONKA"], partyLeader: true },
@@ -41,14 +41,14 @@ const hunts = {
       characters["PRALIDOKSYM"]
     ]
   },
-  HUNT_2: {
+  PARTY_2: {
     id: "dba72623-6a0a-4851-93b1-4ede30acb8c0",
     characters: [
       characters["SAJGONKA"],
       { ...characters["PRALIDOKSYM"], partyLeader: true }
     ]
   },
-  HUNT_3: {
+  PARTY_3: {
     id: "e3ec15df-814e-4c2f-9c8a-ce47527da7a3",
     characters: [
       characters["PRALIDOKSYM"],
@@ -61,4 +61,4 @@ const makeFixture = (fixture) => () => new Promise((resolve) => {
   return resolve(fixture);
 });
 
-export const huntsFixture = makeFixture([hunts["HUNT_1"], hunts["HUNT_2"], hunts["HUNT_3"]]);
+export const partiesFixture = makeFixture([parties["PARTY_1"], parties["PARTY_2"], parties["PARTY_3"]]);
