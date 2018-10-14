@@ -1,0 +1,88 @@
+body {
+  background-color: #fff;
+  color: #333333;
+}
+
+.main-page {
+  padding: 2em 4em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.hunts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hunts-list li {
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+
+  border-radius: 5px;
+
+  width: 50%;
+}
+
+.hunts-list .actions {
+  padding: 0 1.5em;
+}
+
+.hunts-list .button {
+  display: inline-block;
+
+  padding: 0.5em 1em;
+
+  margin-right: 1em;
+
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hunts-list .button.primary {
+  background-color: #004d99;
+}
+
+.hunts-list .button.secondary {
+  background-color: #666666;
+  font-weight: normal;
+}
+
+.hunts-list .button.primary:hover {
+  background-color: #3399ff;
+}
+
+.hunts-list .button.secondary:hover {
+  background-color: #999999;
+}
+
+.hunts-list li hr {
+  width: 95%;
+  margin: 1em auto;
+
+  border: none;
+  border-top: 1px #ddd solid;
+  border-color: #dedede;
+}
+
+.player-badge {
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: 32px;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: #333333;
+}
+
+.player-badge:hover {
+  background-color: #e6f2ff;
+}
+
+.player-badge .vocation-image {
+  width: 32px;
+  height: 32px;
+  padding-right: 0.5em;
+
+  vertical-align: middle;
+}
