@@ -7,3 +7,24 @@ body {
   padding: 2em 4em;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.button {
+  transition: background-color .25s linear;
+}
+
+.button.primary {
+  background-color: #004d99;
+}
+
+.button.secondary {
+  background-color: #666666;
+  font-weight: normal;
+}
+
+.button.primary:hover {
+  background-color: #3399ff;
+}
+
+.button.secondary:hover {
+  background-color: #999999;
+}

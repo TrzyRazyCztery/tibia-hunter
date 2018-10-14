@@ -1,0 +1,52 @@
+.party-page .members-list {
+  width: 300px;
+}
+
+.hunts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hunts-list > li {
+  box-shadow: 0 2px 12px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+
+  border-radius: 5px;
+  width: 50%;
+}
+
+.hunts-list .character-badge {
+  display: inline-block;
+}
+
+.hunts-list .character-badge:hover {
+  background-color: white;
+}
+
+.hunts-list .hunt-profit-characters {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hunts-list .character-badge .balance {
+  padding-left: 0.5em;
+}
+
+.hunts-list .character-badge .balance-profit {
+  color: green;
+}
+
+.hunts-list .character-badge .balance-profit::before {
+  content: "+";
+}
+
+.hunts-list .character-badge .balance-waste {
+  color: red;
+}
+
+.party-page .back-button {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 1em;
+}

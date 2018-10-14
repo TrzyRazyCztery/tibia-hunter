@@ -1,0 +1,25 @@
+.character-badge {
+  display: block;
+  padding: 0.5em 1em;
+  line-height: 32px;
+  border-radius: 5px;
+
+  text-decoration: none;
+  color: #333333;
+}
+
+.character-badge:hover {
+  background-color: #e6f2ff;
+}
+
+.character-badge .character-image {
+  width: 32px;
+  height: 32px;
+  padding-right: 0.5em;
+
+  vertical-align: middle;
+}
+
+.character-badge .loot-master-indicator {
+  padding-left: 0.5em;
+}

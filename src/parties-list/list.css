@@ -17,7 +17,7 @@
   padding: 0 1.5em;
 }
 
-.parties-list .button {
+.button {
   display: inline-block;
 
   padding: 0.5em 1em;
@@ -27,21 +27,4 @@
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-}
-
-.parties-list .button.primary {
-  background-color: #004d99;
-}
-
-.parties-list .button.secondary {
-  background-color: #666666;
-  font-weight: normal;
-}
-
-.parties-list .button.primary:hover {
-  background-color: #3399ff;
-}
-
-.parties-list .button.secondary:hover {
-  background-color: #999999;
 }

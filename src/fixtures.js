@@ -54,7 +54,9 @@ const parties = {
     id: "e3ec15df-814e-4c2f-9c8a-ce47527da7a3",
     characters: [
       characters["PRALIDOKSYM"],
-      { ...characters["SANCTALUX"], lootMaster: true }
+      { ...characters["SANCTALUX"], lootMaster: true },
+      { ...characters["HENLOTH"], lootMaster: true },
+      characters["SAJGONKA"]
     ],
     hunts: [
       {
@@ -110,3 +112,4 @@ const makeFixture = (fixture) => () => new Promise((resolve) => {
 });
 
 export const partiesFixture = makeFixture([parties["PARTY_1"], parties["PARTY_2"], parties["PARTY_3"]]);
+export const partyFixture = makeFixture(parties["PARTY_3"]);

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router";
+import { Route } from "react-router";
 
 import loadResource from "common/load-resource";
 
@@ -11,9 +11,7 @@ const PartiesListMainLoaded = loadResource(partiesFixture, { propName: "parties"
 export default class PartyListPage extends Component {
   render() {
     return (
-      <Switch>
-        <Route path="/" component={PartiesListMainLoaded} />
-      </Switch>
+      <Route path="/" component={PartiesListMainLoaded} />
     );
   }
 }

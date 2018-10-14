@@ -32,7 +32,7 @@ const loadResource = (resource, clientConfig = {}) => (WrappedComponent) => {
       const { resource } = this.state;
 
       const passedProps = { [this.config().propName]: resource };
-      return resource === null ? <p>Loading...</p> : <WrappedComponent {...passedProps} />;
+      return resource === null ? <p>Loading...</p> : <WrappedComponent {...passedProps} {...this.props} />;
     }
   }
 };
