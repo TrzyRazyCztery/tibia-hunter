@@ -35,24 +35,72 @@ const parties = {
   PARTY_1: {
     id: "493eb9b8-a807-4352-aaf7-385a11f7885c",
     characters: [
-      { ...characters["SAJGONKA"], partyLeader: true },
+      { ...characters["SAJGONKA"], lootMaster: true },
       characters["HENLOTH"],
       characters["SANCTALUX"],
       characters["PRALIDOKSYM"]
-    ]
+    ],
+    hunts: []
   },
   PARTY_2: {
     id: "dba72623-6a0a-4851-93b1-4ede30acb8c0",
     characters: [
       characters["SAJGONKA"],
-      { ...characters["PRALIDOKSYM"], partyLeader: true }
-    ]
+      { ...characters["PRALIDOKSYM"], lootMaster: true }
+    ],
+    hunts: []
   },
   PARTY_3: {
     id: "e3ec15df-814e-4c2f-9c8a-ce47527da7a3",
     characters: [
       characters["PRALIDOKSYM"],
-      { ...characters["SANCTALUX"], partyLeader: true }
+      { ...characters["SANCTALUX"], lootMaster: true }
+    ],
+    hunts: [
+      {
+        id: "c7c87140-270a-4feb-aed3-b0191769bb20",
+        date: "2018-10-14T18:02:00.000+02:00",
+        balances: [
+          {
+            characterId: characters["PRALIDOKSYM"].id,
+            balance: 1102500
+          },
+          {
+            characterId: characters["SAJGONKA"].id,
+            balance: -440800
+          },
+          {
+            characterId: characters["HENLOTH"].id,
+            balance: -198000
+          },
+          {
+            characterId: characters["SANCTALUX"].id,
+            balance: 877000
+          }
+        ]
+      },
+      {
+        id: "5b25404c-4b3a-4d80-b285-7c69927fb457",
+        date: "2018-10-12T14:52:00.000+02:00",
+        balances: [
+          {
+            characterId: characters["PRALIDOKSYM"].id,
+            balance: 902500
+          },
+          {
+            characterId: characters["SAJGONKA"].id,
+            balance: -300800
+          },
+          {
+            characterId: characters["HENLOTH"].id,
+            balance: -298000
+          },
+          {
+            characterId: characters["SANCTALUX"].id,
+            balance: -55000
+          }
+        ]
+      }
     ]
   }
 };

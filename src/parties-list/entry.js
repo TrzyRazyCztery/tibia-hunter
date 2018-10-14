@@ -1,7 +1,8 @@
 import "./entry.css";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import partyLeaderIcon from "./assets/crown-transparent.png";
+import lootMasterIcon from "./assets/crown-transparent.png";
 
 class CharacterBadge extends Component {
   shortVocationName() {
@@ -23,8 +24,8 @@ class CharacterBadge extends Component {
   }
 
   lootMasterIndicator(character) {
-    return this.props.partyLeader && <img
-      src={partyLeaderIcon}
+    return this.props.lootMaster && <img
+      src={lootMasterIcon}
       alt="Loot Master"
       className="loot-master-indicator"
       title="This character is a loot master."
@@ -69,8 +70,8 @@ export default class HuntEntry extends Component {
     return (
       <li>
         <div className="actions">
-          <a href={`hunt/${id}`} className="button primary">View</a>
-          <a href={`hunt/${id}`} className="button secondary">Archive</a>
+          <Link to={`party/${id}`} className="button primary">View</Link>
+          <Link to={`party/${id}/archive`} className="button secondary">Archive</Link>
         </div>
         <hr />
         {characters.sort(this.partyOrder).map((character) =>
