@@ -6,7 +6,7 @@ export default class PartiesListMain extends Component {
     const { parties } = this.props;
 
     return (
-      <div>
+      <div className='parties-list'>
         <h1>My Parties</h1>
         <PartiesList parties={parties} />
       </div>

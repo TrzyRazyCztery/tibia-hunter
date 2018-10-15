@@ -1,0 +1,12 @@
+
+.parties-list {
+    display: inline-block;
+    width: 50%;
+    background-color: red;
+}
+.overall-statistics {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: green;
+}
