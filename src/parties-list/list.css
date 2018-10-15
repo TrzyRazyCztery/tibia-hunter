@@ -5,6 +5,7 @@
 
 .parties-list li {
   box-shadow: 0 2px 12px 0 hsla(0, 0%, 0%, 0.2);
+  background-color: #F0EBDF;
   padding: 1em 1.5em;
   margin-bottom: 1em;
 

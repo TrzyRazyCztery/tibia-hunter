@@ -1,11 +1,13 @@
 body {
-  background-color: #fff;
-  color: #333333;
+  background-color: #252C3F;
+  color: #F0EBDF;
 }
 
 .main-page {
   padding: 2em 4em;
   font-family: Helvetica, Arial, sans-serif;
+  width: 60%;
+  margin: 0 auto
 }
 
 .button {
